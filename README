@@ -1,0 +1,32 @@
+Sam Lacet-Brown
+Sept 23rd, 2020
+HW 2
+Comp 15
+To complie: "make cheshire"
+To run: "./cheshire"
+Acknowledgments: The lecture slides on copy constructors and assignment
+constructors, and my friend Tyler for listening to me complain. Also, I reused
+many concepts from HW1 in terms of the errors and Lab 2 in terms of Doubly-Linked Lists.
+Purpose: To create linked lists that holds elements.
+Files submitted:
+- README: this file
+- Makefile
+- testLinkedList.cpp: Driver file which uses their functions
+- LinkedList.cpp: Holds each CharArrayList function
+- LinkedList.h: defines CharArrayList class and the scope of each function
+Testing:
+I began by creating the header file and defining the first constructor,
+which I then created an instance of. After that compiled, I added a print
+function, and then created and tested the other  two constructors.
+I then tested various functions on each test list. For the first list,
+I tested both push/pop functions, first, last, and clear.
+I used the second list to test the concatenate, remove and replace functions.
+Finally, I  used the last instance to check the insert in order and
+find functions. Once all of these were functional using char as E,
+I switched everything to templetes and tested using ints as E.
+Structures:
+DoublyLinkedList, a structure which allows for adding/removing elements by 
+setting pointers to other objects which are defined as being before and after
+it.
+Notes:
+Elements are compared using <= and they must be printable.
